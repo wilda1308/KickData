@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../style.css" rel="stylesheet">
+        <title>EuroCopa</title>
+        <link rel="icon" href="../Assets/Imagenes/header/IconKickData.svg">
+    </head>
+    <body>
+        <header class="cabeza">
+            <a href="../index.html">	
+                <img src = "../Assets/Imagenes/header/LogoKickData.svg" alt = "Logo KickData" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="championsLeague.html" class="enlaces_euro">Liga de Campeones</a></li>
+                    <li><a href="copaMundial.html" class="enlaces_euro">Copa Mundial</a></li>
+                    <li><a href="copaAmérica.html" class="enlaces_euro">Copa América</a></li>
+                    <li><a href="eurocopa.html" class="enlaces_euro" id = "activo_euro">Eurocopa</a></li>
+                    <li><a href=""><img src = "../Assets/Imagenes/header/btn_busqueda_eurocopa.png" alt = "Buscar" id = "busqueda_euro"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class = "principal_eurocopa">
+            <video src = "../Assets/Video/video_eurocopa.mp4" type = "video/mp4" autoplay loop oncontextmenu="return false" class = "videos">
+                No se pudo cargar el video de la eurocopa
+            </video>
+
+            <audio autoplay>
+                <source src = "../Assets/music/audio_eurocopa.mp3" type = "audio/mp3">
+            </audio>
+
+            <section class = "elementos_eurocopa">
+                <div class = "cabeza_eurocopa">
+                    <h2 class = "titulos_paginas_adi">EUROCOPA</h2>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/eurocopa_logo.png" id = "logo_eurocopa">
+                </div>
+                <div class = "botones_principales">
+                    <a href = "#(1960 - 1968)" class="enlaces_eurocopa" id="boton_copa_europa">
+                        <h3>Copa de Naciones<br>Europeas (1960 - 1968)</h3>
+                    </a>
+                    <a href = "#(1972 - 2024)" class="enlaces_eurocopa">
+                        <h3>EuroCopa<br>(1972 - 2024)</h3>
+                    </a>
+                    <a href = "#max_goleadores_eurocopa" class="enlaces_eurocopa">
+                        <h3>Máximos<br>goleadores</h3>
+                    </a>
+                    <a href="#equipos_mas_ganadores" class = "enlaces_eurocopa">
+                        <h3>Selecciones más<br>ganadores</h3>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <section id = "info_fondo_eurocopa">
+            <img src = "../Assets/Imagenes/pag_eurocopa/fondo_eurocopa.png" alt="Fondo información de la EuroCopa" class = "info_back">
+            <article class = "informacion_torneo">
+                <p class = "descripciones_torneo"id = "descripcion_euro">La UEFA Champions League también conocida como liga de campeones, es el torneo internacional de futbol más prestigioso del viejo continente (Europa), actualmente organizado por la UEFA (Unión de Federaciones Europeas de Fútbol). Esta competición reúne a los mejores equipos de ligas nacionales europeas y se caracteriza por su alta competitividad y el famoso trofeo de la “Orejona”. A partir del 2024 usa un formato de liga única con 36 equipos. Oficialmente la champions empezó a disputarse en el año de 1955.</p>
+                <div id = "trofeos_balones">
+                    <div class = "titulo_imag">
+                        <h2><strong>Trofeo</strong></h2>
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Tofeo de la EuroCopa">
+                    </div>
+                    <div class = "titulo_imag">
+                        <h2><strong>Diseño de balones</strong></h2>
+                        <img src="../Assets/Imagenes/pag_eurocopa/balon_eurocopa.png" alt="Balón de la EuroCopa" class = "balones">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <h2 class = "subtitulos">Registros historicos</h2>
+        <details open id = "(1960 - 1968)">
+            <summary>
+                <h3 class = "subtitulos_eurocopa">Copa de Naciones Europeas (1960 - 1968)</h3>
+                <img src = "../Assets/Imagenes/pag_eurocopa/copa_naciones_europeas.png" alt = "Trofeo copa de Naciones Europeas(1960 - 1968)" class = "imagen_subtitulos">
+            </summary>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Anfitrión</th>
+                    <th>Campeón</th>
+                    <th>Subcampeón</th>
+                    <th>Resultado</th>
+                    <th>Máximo goleador</th>
+                </tr>
+                <tr>
+                    <td>1960</td>
+                    <td>Francia</td>
+                    <td>Unión Soviética</td>
+                    <td>Yugoslavia</td>
+                    <td>2 - 1<br><small style = "font-size: 10px;">(Prórroga)</small></td>
+                    <td>Just Fontaine<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>1964</td>
+                    <td>España</td>
+                    <td>España</td>
+                    <td>Unión Soviética</td>
+                    <td>2 - 1</td>
+                    <td>Ole Madsen<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1968</td>
+                    <td>Italia</td>
+                    <td>Italia</td>
+                    <td>Yugoslavia</td>
+                    <td>1 - 1<br><small style = "font-size: 10px;">(2 - 0) Repetición</small></td>
+                    <td>Dragan Džajić<br>(7 goles)</td>
+                </tr>
+            </table>
+        </details>
+        <br>
+        <details open id = "(1972 - 2024)">
+            <summary>
+                <h3 class = "subtitulos_eurocopa">EuroCopa (1972 - 2024)</h3>
+                <img src = "../Assets/Imagenes/pag_champions/trofeo_champions.png" alt = "Trofeo de la EuroCopa (1972 - 2024)" class = "imagen_subtitulos">
+            </summary>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Anfitrión</th>
+                    <th>Campeón</th>
+                    <th>Subcampeón</th>
+                    <th>Resultado</th>
+                    <th>Máximo goleador</th>
+                </tr>
+                <tr>
+                    <td>1972</td>
+                    <td>Bélgica</td>
+                    <td>Alemania</td>
+                    <td>Unión Soviética</td>
+                    <td>3 - 0</td>
+                    <td>Gerd Müller<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>1976</td>
+                    <td>Yugoslavia</td>
+                    <td>Checoslovaquia</td>
+                    <td>Alemania</td>
+                    <td>2 - 2<br><small style = "font-size: 10px;">(5 - 3) P</small></td>
+                    <td>Dieter Müller<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1980</td>
+                    <td>Italia</td>
+                    <td>Alemania</td>
+                    <td>Bélgica</td>
+                    <td>2 - 1</td>
+                    <td>Klaus Allofs<br>(3 goles)</td>
+                </tr>
+                <tr>
+                    <td>1984</td>
+                    <td>Francia</td>
+                    <td>Francia</td>
+                    <td>España</td>
+                    <td>2 - 0</td>
+                    <td>Michel Platini<br>(9 goles)</td>
+                </tr>
+                <tr>
+                    <td>1988</td>
+                    <td>Alemania</td>
+                    <td>Países Bajos</td>
+                    <td>Unión Soviética</td>
+                    <td>2 - 0</td>
+                    <td>Van Basten<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>1992</td>
+                    <td>Suecia</td>
+                    <td>Dinamarca</td>
+                    <td>Alemania</td>
+                    <td>2 - 0</td>
+                    <td>Dennis Bergkamp, Tomas Brolin, Henrik Larsen y Karl-Heinz Riedle<br>(3 goles)</td>
+                </tr>
+                <tr>
+                    <td>1996</td>
+                    <td>Inglaterra</td>
+                    <td>Alemania</td>
+                    <td>República Checa</td>
+                    <td>2 - 1<br><small style = "font-size: 10px;">(gol de oro)</small></td>
+                    <td>Alan Shearer<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>2000</td>
+                    <td>Bélgica y Países Bajos</td>
+                    <td>Francia</td>
+                    <td>Italia</td>
+                    <td>2 - 1<br><small style = "font-size: 10px;">(gol de oro)</small></td>
+                    <td>Patrick Kluivert y  Savo Milošević<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>Portugal</td>
+                    <td>Grecia</td>
+                    <td>Portugal</td>
+                    <td>1 - 0</td>
+                    <td>Milan Baroš<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>Australia y Suiza</td>
+                    <td>España</td>
+                    <td>Alemania</td>
+                    <td>1 - 0</td>
+                    <td>David Villa<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>Polonia y Ucrania</td>
+                    <td>España</td>
+                    <td>Italia</td>
+                    <td>4 - 0</td>
+                    <td>Mario Mandžukić, Cristiano Ronaldo, Mario Gomez, Fernando torres, Alan Dzagoev y Mario Balotelli<br>(3 goles)</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>Francia</td>
+                    <td>Portugal</td>
+                    <td>Francia</td>
+                    <td>1 - 0<br><small style = "font-size: 10px;">(Prórroga)</small></td>
+                    <td>Antonie Griezmann<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Europa multisede</td>
+                    <td>Italia</td>
+                    <td>Inglaterra</td>
+                    <td>1 - 1<br><small style = "font-size: 10px;">(3- 2) P</small></td>
+                    <td>Cristiano Ronaldo y Patrik Schick<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>Alemania</td>
+                    <td>España</td>
+                    <td>Inglaterra</td>
+                    <td>2 - 1</td>
+                    <td>Georges Mikautadze, Jamal Musiala, Cody Gakpo, Ivan Schranz, Dani Olmo y Harry Kane<br>(3 goles) </td>
+                </tr>
+            </table>
+        </details>
+        <br>
+        <section id = "max_goleadores_eurocopa">
+            <h3 class = "subtitulos">Máximos goleadores de la<br>EuroCopa</h3>
+            <ul id = "max_goleadores">
+                <li class="listas">
+                    <p class = "numeros_listas listas_eurocopa"><strong>1.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/cristiano_eurocopa.png" alt="Cristiano Ronaldo en la EuroCopa imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Cristiano Ronaldo</strong></h5>
+                        <p class = "add_listas">14 goles</p>
+                    </article> 
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_eurocopa"><strong>2.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/platini_eurocopa.png" alt="Michel Platini en la EuroCopa imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Michel Platini</strong></h5>
+                        <p class = "add_listas">9 goles</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_eurocopa"><strong>3.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/madsen_eurocopa.png" alt="Ole Madsen en la EuroCopa imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Ole Madsen</strong></h5>
+                        <p class = "add_listas">7 goles</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_eurocopa"><strong>4.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/morata_eurocopa.png" alt="Albaro Morata en la EuroCopa imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Albaro Morata</strong></h5>
+                        <p class = "add_listas">7 goles</p>
+                    </article>
+                </li><br>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_eurocopa"><strong>5.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/griezmann_eurocopa.png" alt="Antonie Griezmann en champions imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Antonie Griezmann</strong></h5>
+                        <p class = "add_listas">7 goles</p>
+                    </article>
+                </li><br>
+            </ul>
+        </section>
+        <br>
+        <section id = "equipos_mas_ganadores">
+            <h3 class = "subtitulos">Selecciones más ganadoras de<br>la Euro</h3>
+            <ul id = "mas_ganadores">
+                <li class = "listas">
+                    <p class = "numeros_listas listas_eurocopa"><strong>1.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/españa_eurocopa.png" alt = "Croquis de España con bandera Eurocopa" class = "img_listas_ganadores">
+                    <article class = "cantidad_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_eurocopa"><strong>2.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/alemania_eurocopa.png" alt = "Croquis de Alemania con bandera Eurocopa" class = "img_listas_ganadores">
+                    <article class = "cantidad_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_eurocopa"><strong>3.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/italia_eurocopa.png" alt = "Croquis de Italia con bandera Eurocopa" class = "img_listas_ganadores">
+                    <article class = "cantidad_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_eurocopa"><strong>4.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_eurocopa/francia_eurocopa.png" alt = "Croquis de Francia con bandera Eurocopa" class = "img_listas_ganadores">
+                    <article class = "cantidad_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_eurocopa/trofeo_eurocopa.png" alt = "Trofeo EuroCopa" class = "imagenes_cant_trofeos">
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <hr id = "separador_euro">
+		<footer>
+			<div id = "parte_izquierda">
+				<img src = "../Assets/Imagenes/footer/LogoKickData_Footer.svg" alt = "Logo de pie de pagina KickData" width = "256" height = "70">
+				<p>&copy 2026 KickData</p>
+				<p id = "informacion_proyecto">Proyecto académico - Ingeniería de Software</p>
+
+				<p>Desarrollador: Wilson David Monroy Ramirez</p>
+				<p>Fundación Universitaria compensar</p>
+			</div>
+			<div id = "parte_derecha">
+				<h4 id = "titulo_contacto_eurocopa">Contacto</h4>
+				<div id = "contacto">
+					<div id = "contacto_izq">
+						<h5>Telefono:</h5>
+
+						<p>3024528951</p>
+						<p id = "telefono_fijo">(601)5611248</p>
+
+						<h5>Redes sociales:</h5>
+					</div>
+
+					<div id = "contacto_der">
+						<address>
+							<h5>Correo electronico:</h5>
+							<a  href = "mailto:KickData@gmail.com" id="info_gmail">KickData@gmail.com</a>
+						</address>
+						<a href = "https://www.facebook.com">
+							<img src = "../Assets/Imagenes/footer/facebook.png" alt = "Facebook" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.instagram.com">
+							<img src = "../Assets/Imagenes/footer/instagram.png" alt = "Instagram" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.whatsapp.com">
+							<img src = "../Assets/Imagenes/footer/whatsapp.png" alt = "WhatsApp" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.x.com">
+							<img src = "../Assets/Imagenes/footer/x.png" alt = "X" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.youtube.com">
+							<img src = "../Assets/Imagenes/footer/youtube.png" alt = "YouTube" class = "redes_sociales_imagenes" id = "youtube_img">
+						</a>
+					</div>
+				</div>
+                <a href = "contacto.html" id = "btn_contacto_eurocopa">Contáctate con nosotros</a>
+			</div>
+		</footer>
+    </body>
+</html>

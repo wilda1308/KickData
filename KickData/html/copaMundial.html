@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../style.css" rel="stylesheet">
+        <title>Copa Mundial de Fútbol</title>
+        <link rel="icon" href="../Assets/Imagenes/header/IconKickData.svg">
+    </head>
+    <body>
+        <header class="cabeza">
+            <a href="../index.html">	
+                <img src = "../Assets/Imagenes/header/LogoKickData.svg" alt = "Logo KickData" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="championsLeague.html" class="enlaces_CopaMundial">Liga de Campeones</a></li>
+                    <li><a href="copaMundial.html" class="enlaces_CopaMundial" id="activo_mundial">Copa Mundial</a></li>
+                    <li><a href="copaAmérica.html" class="enlaces_CopaMundial">Copa América</a></li>
+                    <li><a href="eurocopa.html" class="enlaces_CopaMundial">Eurocopa</a></li>
+                    <li><a href=""><img src = "../Assets/Imagenes/header/btn_busqueda_mundial.png" alt = "Buscar" id="busqueda_mundial"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class = "principal_copa_mundial">
+            <video src = "../Assets/Video/Video_Copa_Mundial.mp4" type = "video/mp4" autoplay loop oncontextmenu="return false" class = "videos">
+                No se pudo cargar el video del mundial
+            </video>
+
+            <audio autoplay>
+                <source src = "../Assets/music/AudioMundial.mp3" type = "audio/mp3">
+            </audio>
+
+            <section class = "elementos_copa_mundial">
+                <div class = "cabeza_copa_mundial">
+                    <h2 class = "titulos_paginas_adi">COPA MUNDIAL<br>DE FÚTBOL</h2>
+                    <img src = "../Assets/Imagenes/pag_mundial/copa_mundial_logo26.png" alt = "Logo de la Copa Mundial Actual" id = "logo_copa_mundial">
+                </div>
+                <div class = "botones_principales">
+                    <a href = "#(1930 - 1970)" class="enlaces_mundial">
+                        <h3>Trofeo Jules Rimet<br>(1930 - 1970)</h3>
+                    </a>
+                    <a href = "#(1974 - 2022)" class="enlaces_mundial">
+                        <h3>Trofeo Actual<br>(1974 - 2022)</h3>
+                    </a>
+                    <a href = "#max_goleadores_copa_mundial" class="enlaces_mundial">
+                        <h3>Máximos<br>goleadores</h3>
+                    </a>
+                    <a href="#equipos_mas_ganadores" class = "enlaces_mundial">
+                        <h3>Selecciones más<br>mundialistas</h3>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <section id = "info_fondo_copa_mundial">
+            <img src = "../Assets/Imagenes/pag_mundial/fondo_mundial_info.jpg" alt="Fondo información de la copa del mundo" class = "info_back">
+            <article class = "informacion_torneo">
+                <p class = "descripciones_torneo" id = "descripcion_mundial">La copa Mundial de la FIFA, también conocida como Copa mundial de Fútbol, Copa del Mundo o simplemente Mundial, es el principal torneo internacional oficial de futbol masculino a nivel de selecciones nacionales del mundo.<br>Se realiza cada cuatro años desde 1930, cuando se llamaba campeonato Mundial de Futbol, con la excepción de 1942 y 1946,se suspendió por conflictos de la segunda guerra mundial. Cuenta con sod etapas importantes, una clasificacion de 200 selecciones y una fase final. En una sede definida con aterioridad en la que participan 48 equipos a partir del mundial 2026.</p>
+                <div id = "trofeos_balones">
+                    <div class = "titulo_imag">
+                        <h2>Trofeo</h2>
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Tofeo de la Copa del Mundo Actual">
+                    </div>
+                    <div class = "titulo_imag">
+                        <h2>Diseño de balones</h2>
+                        <img src="../Assets/Imagenes/pag_mundial/balon_mundial_actual.png" alt="Balón de la copa mundial" class = "balones">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <h2 class = "subtitulos">Registros historicos</h2>
+        <details open id = "(1930 - 1970)">
+            <summary>
+                <h3 class = "subtitulos_mundial">Trofeo Jules Rimet (1930 - 1970)</h3>
+                <img src = "../Assets/Imagenes/pag_mundial/copa_jules_rimet.png" alt = "Trofeo copa Jules Rimetbr(1930 - 1970)" class = "imagen_subtitulos">
+            </summary>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Anfitrión</th>
+                    <th>Campeón</th>
+                    <th>Subcampeón</th>
+                    <th>Resultado</th>
+                    <th>Máximo goleador</th>
+                </tr>
+                <tr>
+                    <td>1930</td>
+                    <td>Uruguay</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>4 - 2</td>
+                    <td>Guillermo Stábile<br>(8 goles)</td>
+                </tr>
+                <tr>
+                    <td>1934</td>
+                    <td>Italia</td>
+                    <td>Italia</td>
+                    <td>Checoslovaquia</td>
+                    <td>2 - 1<br><small style = "font-size: 10px;">(Prórroga)</small></td>
+                    <td>Oldrich Nejedlý<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>1938</td>
+                    <td>Francia</td>
+                    <td>Italia</td>
+                    <td>Hungría</td>
+                    <td>4 - 2</td>
+                    <td>Leônidas da Silva<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1950</td>
+                    <td>Brasil</td>
+                    <td>Uruguay</td>
+                    <td>Brasil</td>
+                    <td>2 - 1</td>
+                    <td>Ademir de Menezes<br>(8 goles)</td>
+                </tr>
+                <tr>
+                    <td>1954</td>
+                    <td>Suiza</td>
+                    <td>Alemania</td>
+                    <td>Hungría</td>
+                    <td>3 - 2</td>
+                    <td>Sándor Kocsis<br>(11 goles)</td>
+                </tr>
+                <tr>
+                    <td>1958</td>
+                    <td>Suecia</td>
+                    <td>Brasil</td>
+                    <td>Suecia</td>
+                    <td>5 - 2</td>
+                    <td>Just Fontaine<br>(13 goles)</td>
+                </tr>
+                <tr>
+                    <td>1962</td>
+                    <td>Chile</td>
+                    <td>Brasil</td>
+                    <td>Checoslovaquia</td>
+                    <td>3 - 1</td>
+                    <td>Garrincha, Vavá, Leonel Sánchez, Flórián Albert, Valentin Ivanov y  Drazan Jerkovic<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1966</td>
+                    <td>Inglaterra</td>
+                    <td>Inglaterra</td>
+                    <td>Alemania</td>
+                    <td>4 - 2<br><small style = "font-size: 10px;">(Prórroga)</small></td>
+                    <td>Eusébio da Silva<br>(9 goles)</td>
+                </tr>
+                <tr>
+                    <td>1970</td>
+                    <td>Mexico</td>
+                    <td>Brasil</td>
+                    <td>Italia</td>
+                    <td>4 - 1</td>
+                    <td>Gerd Müller<br>(10 goles)</td>
+                </tr>
+            </table>
+        </details>
+        <br>
+        <details open id = "(1974 - 2022)">
+            <summary>
+                <h3 class = "subtitulos_mundial">Copa Mundial - Trofeo Actual (1974 - 2022)</h3>
+                <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo Copa Mundial - Trofeo Actual (1974 - 2022)" class = "imagen_subtitulos">
+            </summary>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Anfitrión</th>
+                    <th>Campeón</th>
+                    <th>Subcampeón</th>
+                    <th>Resultado</th>
+                    <th>Máximo goleador</th>
+                </tr>
+                <tr>
+                    <td>1974</td>
+                    <td>Alemania</td>
+                    <td>Alemania</td>
+                    <td>Países Bajos</td>
+                    <td>2 - 1</td>
+                    <td>Grzegorz Lato<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1978</td>
+                    <td>Argentina</td>
+                    <td>Argentina</td>
+                    <td>Países Bajos</td>
+                    <td>3 - 1<br><small style = "font-size: 10px;">(Prórroga)</small></td>
+                    <td>Mario Alberto Kempes<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1982</td>
+                    <td>España</td>
+                    <td>Italia</td>
+                    <td>Alemania</td>
+                    <td>3 - 1</td>
+                    <td>Paolo Rossi<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1986</td>
+                    <td>Mexico</td>
+                    <td>Argentina</td>
+                    <td>Alemania</td>
+                    <td>3 - 2</td>
+                    <td>Gary Lineker<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1990</td>
+                    <td>Italia</td>
+                    <td>Alemania</td>
+                    <td>Argentina</td>
+                    <td>1 - 0</td>
+                    <td>Salvatore Schillaci<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1994</td>
+                    <td>Estados Unidos</td>
+                    <td>Brasil</td>
+                    <td>Italia</td>
+                    <td>0 - 0<br><small style = "font-size: 10px;">(3 - 2) p</small></td>
+                    <td>Oleg Salenko y Hristo Stoichkov<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1998</td>
+                    <td>Francia</td>
+                    <td>Francia</td>
+                    <td>Brasil</td>
+                    <td>3 - 0</td>
+                    <td>Davor Šuker<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>Corea del sur y Japón</td>
+                    <td>Brasil</td>
+                    <td>Alemania</td>
+                    <td>2 - 0</td>
+                    <td>Ronaldo Nazário<br>(8 goles)</td>
+                </tr>
+                <tr>
+                    <td>2006</td>
+                    <td>Alemania</td>
+                    <td>Italia</td>
+                    <td>Francia</td>
+                    <td>1 - 1<br><small style = "font-size: 10px;">(5 - 3) p</small></td>
+                    <td>Miroslav Klose<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td>Sudáfrica</td>
+                    <td>España</td>
+                    <td>Países Bajos</td>
+                    <td>1 - 0<br><small style = "font-size: 10px;">(Prórroga)</small></td>
+                    <td>Thomas Müller, Diego Forlán, Wesley Sneijder y David Villa<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Brasil</td>
+                    <td>Alemania</td>
+                    <td>Argentina</td>
+                    <td>1 - 0<br><small style = "font-size: 10px;">(Prórroga)</small></td>
+                    <td>James Rodríguez<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>Rusia</td>
+                    <td>Francia</td>
+                    <td>Croacia</td>
+                    <td>4 - 2</td>
+                    <td>Harry Kane<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Qatar</td>
+                    <td>Argentina</td>
+                    <td>Francia</td>
+                    <td>3 - 3<br><small style = "font-size: 10px;">(4 - 2) p</small></td>
+                    <td>Kylian Mbappé<br>(8 goles)</td>
+                </tr>
+                <tr>
+                    <td><a href="mundial2026.html">2026</a></td>
+                    <td><a href="mundial2026.html">EEUU, Mexico y Canada</a></td>
+                    <td><a href="mundial2026.html">-</a></td>
+                    <td><a href="mundial2026.html">-</a></td>
+                    <td><a href="mundial2026.html">-</a></td>
+                    <td><a href="mundial2026.html">-</a></td>
+                </tr>
+            </table>
+        </details>
+        <br>
+        <section id = "max_goleadores_copa_mundial">
+            <h3 class = "subtitulos">Máximos goleadores de la<br>Copa Mundial de la FIFA</h3>
+            <ul id = "max_goleadores">
+                <li class = "listas">
+                    <p class = "numeros_listas listas_mundial"><strong>1.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_mundial/messi_mundial.jpg" alt="Lionel Messi en Mundial imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Lionel Messi</strong></h5>
+                        <p class = "add_listas">20 goles</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_mundial"><strong>2.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_mundial/mbappe_mundial.jpg" alt="Kylian Mbappé en Mundial imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Kylian Mbappé</strong></h5>
+                        <p class = "add_listas">18 goles</p>
+                    </article>
+                </li>
+                <li class="listas">
+                    <p class = "numeros_listas listas_mundial"><strong>3.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_mundial/klose_mundial.jpg" alt="Miroslav Klose en Mundial imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Miroslav Klose</strong></h5>
+                        <p class = "add_listas">16 goles</p>
+                    </article> 
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_mundial"><strong>4.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_mundial/nazario_mundial.jpg" alt="Ronaldo Nazario en Mundial imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Ronaldo Nazario</strong></h5>
+                        <p class = "add_listas">15 goles</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_mundial"><strong>5.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_mundial/müller_mundial.jpg" alt="Gerd Müller en Mundial imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Gerd Müller</strong></h5>
+                        <p class = "add_listas">14 goles</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <br>
+        <section id = "equipos_mas_ganadores">
+            <h3 class = "subtitulos">Selecciones más<br>mundialistas</h3>
+            <ul id = "mas_ganadores">
+                <li class = "listas">
+                    <p class = "numeros_listas listas_mundial"><strong>1.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_mundial/brasil_mundial.png" alt = "Croquis de Brasil con bandera mundial" class = "img_listas_ganadores">
+                    <article class = "cantidad_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_jules_rimet.png" alt = "Trofeo Jules Rimet" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_jules_rimet.png" alt = "Trofeo Jules Rimet" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_jules_rimet.png" alt = "Trofeo Jules Rimet" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_mundial"><strong>2.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_mundial/alemania_mundial.png" alt = "Croquis de Alemania con bandera mundial" class = "img_listas_ganadores">
+                    <article class = "cantidad_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_jules_rimet.png" alt = "Trofeo Jules Rimet" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_mundial"><strong>3.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_mundial/italia_mundial.png" alt = "Croquis de Italia con bandera mundial" class = "img_listas_ganadores">
+                    <article class = "cantidad_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_jules_rimet.png" alt = "Trofeo Jules Rimet" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_jules_rimet.png" alt = "Trofeo Jules Rimet" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_mundial"><strong>4.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_mundial/argentina_mundial.png" alt = "Croquis de Argentina con bandera mundial" class = "img_listas_ganadores">
+                    <article class = "cantidad_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Trofeo copa Mundial" class = "imagenes_cant_trofeos">
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <hr id = "separador_mundial">
+		<footer>
+			<div id = "parte_izquierda">
+				<img src = "../Assets/Imagenes/footer/LogoKickData_Footer.svg" alt = "Logo de pie de pagina KickData" width = "256" height = "70">
+				<p>&copy 2026 KickData</p>
+				<p id = "informacion_proyecto">Proyecto académico - Ingeniería de Software</p>
+
+				<p>Desarrollador: Wilson David Monroy Ramirez</p>
+				<p>Fundación Universitaria compensar</p>
+			</div>
+			<div id = "parte_derecha">
+				<h4 id = "titulo_contacto_mundial">Contacto</h4>
+				<div id = "contacto">
+					<div id = "contacto_izq">
+						<h5>Telefono:</h5>
+
+						<p>3024528951</p>
+						<p id = "telefono_fijo">(601)5611248</p>
+
+						<h5>Redes sociales:</h5>
+					</div>
+
+					<div id = "contacto_der">
+						<address>
+							<h5>Correo electronico:</h5>
+							<a  href = "mailto:KickData@gmail.com" id="info_gmail">KickData@gmail.com</a>
+						</address>
+						<a href = "https://www.facebook.com">
+							<img src = "../Assets/Imagenes/footer/facebook.png" alt = "Facebook" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.instagram.com">
+							<img src = "../Assets/Imagenes/footer/instagram.png" alt = "Instagram" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.whatsapp.com">
+							<img src = "../Assets/Imagenes/footer/whatsapp.png" alt = "WhatsApp" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.x.com">
+							<img src = "../Assets/Imagenes/footer/x.png" alt = "X" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.youtube.com">
+							<img src = "../Assets/Imagenes/footer/youtube.png" alt = "YouTube" class = "redes_sociales_imagenes" id = "youtube_img">
+						</a>
+					</div>
+				</div>
+                <a href = "contacto.html" id = "btn_contacto_mundial">Contáctate con nosotros</a>
+			</div>
+		</footer>
+    </body>
+</html>

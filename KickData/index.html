@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+		<link href ="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<link href = "style.css" rel = "stylesheet">
+		<link rel="icon" href="Assets/Imagenes/header/IconKickData.svg">
+        <title>KickData</title>
+    </head>
+    <body>
+		<header class="cabeza">
+			<a href="index.html">	
+				<img src = "Assets/Imagenes/header/LogoKickData.svg" alt = "Logo KickData" class="logo">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="html/championsLeague.html" class="enlaces_principal">Liga de Campeones</a></li>
+					<li><a href="html/copaMundial.html" class="enlaces_principal">Copa Mundial</a></li>
+					<li><a href="html/copaAmérica.html" class="enlaces_principal">Copa América</a></li>
+					<li><a href="html/eurocopa.html" class="enlaces_principal">Eurocopa</a></li>
+					<li><a href=""><img src="Assets/Imagenes/header/btn_busqueda_principal.png" alt="Botón de busqueda" id = "busqueda_index"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="info_principal">
+			<header>
+					<h1 id="titulo_principal">KickData plataforma de torneos importantes de fútbol</h1>
+			</header>
+
+			<p id="parrafo_principal">KickData es una plataforma informativa que reúne en un solo lugar la historia de los torneos mas importantes del futbol mundial. Aquí podrás consultar campeones, resultados finales y datos relevantes de la Champions League, la Copa Mundial, la Copa América y la EuroCopa de forma rápida, organizada y confiable.</p>
+		</main>
+		<div>
+			<a href = "#seleccion" class="enlaces" id="boton_explorar">
+				<h3><strong>Explorar torneos</strong></h3>
+			</a>
+		</div>
+		<br>
+		<br>
+		<p class="parrafo_mensaje">¡TODOS LOS CAMPEONES EN UN SOLO LUGAR!</p>
+		<section id = "seleccion">
+			<h2 id = "titulo_torneos">Torneos más importantes del fútbol</h2>
+
+			<div id = "cartas_torneos">
+				<div class = "fila1">
+					<a href = "html/championsLeague.html" class="enlaces">
+						<div class = "cartas">
+							<h5><strong>Liga de Campeones</strong></h5>
+							<img src = "Assets/Imagenes/principal/liga_de_campeones.png" alt = "Imagen principal de la Champions League" alt = "Champions League" width= "302" height = "302" style = "border-radius: 100%">
+						</div>
+					</a>
+					<div class = "cartas">
+						<a href="html/copaMundial.html" class="enlaces">
+							<h5><strong>Copa Mundial</strong></h5>
+							<img src = "Assets/Imagenes/principal/copa_mundial.jpg" alt = "Imagen principal de la copa del mundo" width= "302" height = "302" style = "border-radius: 100%">
+						</a>
+					</div>
+				</div>
+				<div class = "fila1">
+					<div class="cartas">
+						<a href = "html/eurocopa.html" class = "enlaces">
+							<h5><strong>EuroCopa</strong></h5>
+							<img src = "Assets/Imagenes/principal/eurocopa.jpg" alt = "Imagen principal de la eurocopa" width= "302" height = "302" style = "border-radius: 100%">
+						</a>
+					</div>
+					<div class = "cartas">
+						<a href = "html/copaAmérica.html" class = "enlaces">
+							<h5><strong>Copa América</strong></h5>
+							<img src = "Assets/Imagenes/principal/copa_america.jpg" alt = "Imagen principal de la copa america" width= "302" height = "302" style = "border-radius: 100%">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<hr id = "separador_index">
+		<footer>
+			<div id = "parte_izquierda">
+				<img src = "Assets/Imagenes/footer/LogoKickData_Footer.svg" alt = "Logo de pie de pagina KickData" width = "256" height = "70">
+				<p>&copy 2026 KickData</p>
+				<p id = "informacion_proyecto">Proyecto académico - Ingeniería de Software</p>
+
+				<p>Desarrollador: Wilson David Monroy Ramirez</p>
+				<p>Fundación Universitaria compensar</p>
+			</div>
+			<div id = "parte_derecha">
+				<h4 id = "titulo_contacto_principal">Contacto</h4>
+				<div id = "contacto">
+					<div id = "contacto_izq">
+						<h5>Telefono:</h5>
+
+						<p>3024528951</p>
+						<p id = "telefono_fijo">(601)5611248</p>
+
+						<h5>Redes sociales:</h5>
+					</div>
+
+					<div id = "contacto_der">
+						<address>
+							<h5>Correo electronico:</h5>
+							<a  href = "mailto:KickData@gmail.com" id="info_gmail">KickData@gmail.com</a>
+						</address>
+						<a href="">
+							<img src = "Assets/Imagenes/footer/facebook.png" alt = "Facebook" class = "redes_sociales_imagenes">
+						</a>
+						<a href="">
+							<img src = "Assets/Imagenes/footer/instagram.png" alt = "Instagram" class = "redes_sociales_imagenes">
+						</a>
+						<a href="">
+							<img src = "Assets/Imagenes/footer/whatsapp.png" alt = "WhatsApp" class = "redes_sociales_imagenes">
+						</a>
+						<a href="">
+							<img src = "Assets/Imagenes/footer/x.png" alt = "X" class = "redes_sociales_imagenes">
+						</a>
+						<a href="">
+							<img src = "Assets/Imagenes/footer/youtube.png" alt = "YouTube" class = "redes_sociales_imagenes" id = "youtube_img">
+						</a>
+					</div>
+				</div>
+				<a href = "html/contacto.html" id = "btn_contacto_principal">Contáctate con nosotros</a>
+			</div>
+		</footer>
+    </body>
+</html>

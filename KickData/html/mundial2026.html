@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../style.css" rel="stylesheet">
+        <title>Copa Mundial de Fútbol</title>
+        <link rel="icon" href="../Assets/Imagenes/header/IconKickData.svg">
+    </head>
+    <body>
+        <header class="cabeza">
+            <a href="../index.html">	
+                <img src = "../Assets/Imagenes/header/LogoKickData.svg" alt = "Logo KickData" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="championsLeague.html" class="enlaces_CopaMundial2026">Liga de Campeones</a></li>
+                    <li><a href="copaMundial.html" class="enlaces_CopaMundial2026">Copa Mundial</a></li>
+                    <li><a href="copaAmérica.html" class="enlaces_CopaMundial2026">Copa América</a></li>
+                    <li><a href="eurocopa.html" class="enlaces_CopaMundial2026">Eurocopa</a></li>
+                    <li><a href=""><img src = "../Assets/Imagenes/header/lupa_header.svg" alt = "Buscar" id="busqueda_mundial2026"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class = "principal_copa_mundial">
+            <video src = "../Assets/Video/Video_Copa_Mundial.mp4" type = "video/mp4" autoplay loop oncontextmenu="return false" class = "videos">
+                No se pudo cargar el video del mundial
+            </video>
+
+            <audio autoplay>
+                <source src = "../Assets/music/AudioMundial.mp3" type = "audio/mp3">
+            </audio>
+
+            <section class = "elementos_copa_mundial">
+                <div class = "cabeza_copa_mundial">
+                    <h2 class = "titulos_paginas_adi">COPA MUNDIAL<br>DE FÚTBOL 2026</h2>
+                    <img src = "../Assets/Imagenes/pag_mundial/copa_mundial_logo26.png" alt = "Logo de la Copa Mundial 2026" id = "logo_copa_mundial2026">
+                </div>
+            </section>
+        </main>
+        <section id = "info_fondo_copa_mundial">
+            <img src = "../Assets/Imagenes/pag_mundial/fondo_mundial_info.jpg" alt="Fondo información de la copa del mundo" class = "info_back">
+            <article class = "informacion_torneo">
+                <p id="descripcion_mundial2026" class="descripciones_torneo">
+                    Observa los 48 equipos clasificados a la copa mundial de fútbol organizada en 
+                    <strong style="color: #2563eb;">Estados Unidos</strong>, <strong style = "color: #dc2626">Canadá</strong> y <strong style = "color: #22c55e">México</strong>. 
+                    donde se muestra por grupo cada selección.
+                </p>
+                <div id = "trofeos_balones">
+                    <div class = "titulo_imag">
+                        <h2>Trofeo</h2>
+                        <img src = "../Assets/Imagenes/pag_mundial/copa_actual_mundial.png" alt = "Tofeo de la Copa del Mundo Actual">
+                    </div>
+                    <div class = "titulo_imag">
+                        <h2>Diseño de balones</h2>
+                        <img src="../Assets/Imagenes/pag_mundial/balon_mundial_actual.png" alt="Balón de la copa mundial" class = "balones">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <h2 class="subtitulos">Equipos Copa Mundial 2026</h2>
+ 
+        <button id = "btn-descubrir">Descrubrir equipos</button>
+        <p id="contador-partidos"></p>
+ 
+        <div id="estado-api">
+            <div class="spinner"></div>
+            <p>Cargando equipos desde la API...</p>
+        </div>
+
+        <p id = "cant-equipos"></p>
+
+        <div id="contenedor-grupos"></div>
+ 
+        
+
+        <hr id = "separador_mundial2026">
+		<footer>
+			<div id = "parte_izquierda">
+				<img src = "../Assets/Imagenes/footer/LogoKickData_Footer.svg" alt = "Logo de pie de pagina KickData" width = "256" height = "70">
+				<p>&copy 2026 KickData</p>
+				<p id = "informacion_proyecto">Proyecto académico - Ingeniería de Software</p>
+
+				<p>Desarrollador: Wilson David Monroy Ramirez</p>
+				<p>Fundación Universitaria compensar</p>
+			</div>
+			<div id = "parte_derecha">
+				<h4 id = "titulo_contacto_mundial2026">Contacto</h4>
+				<div id = "contacto">
+					<div id = "contacto_izq">
+						<h5>Telefono:</h5>
+
+						<p>3024528951</p>
+						<p id = "telefono_fijo">(601)5611248</p>
+
+						<h5>Redes sociales:</h5>
+					</div>
+
+					<div id = "contacto_der">
+						<address>
+							<h5>Correo electronico:</h5>
+							<a  href = "mailto:KickData@gmail.com" id="info_gmail">KickData@gmail.com</a>
+						</address>
+						<a href = "https://www.facebook.com">
+							<img src = "../Assets/Imagenes/footer/facebook.png" alt = "Facebook" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.instagram.com">
+							<img src = "../Assets/Imagenes/footer/instagram.png" alt = "Instagram" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.whatsapp.com">
+							<img src = "../Assets/Imagenes/footer/whatsapp.png" alt = "WhatsApp" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.x.com">
+							<img src = "../Assets/Imagenes/footer/x.png" alt = "X" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.youtube.com">
+							<img src = "../Assets/Imagenes/footer/youtube.png" alt = "YouTube" class = "redes_sociales_imagenes" id = "youtube_img">
+						</a>
+					</div>
+				</div>
+                <a href = "contacto.html" id = "btn_contacto_mundial2026">Contáctate con nosotros</a>
+			</div>
+		</footer>
+        <script src = "../javaScript/api.js"></script>
+    </body>
+</html>

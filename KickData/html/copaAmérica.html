@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../style.css" rel="stylesheet">
+        <title>Copa América</title>
+        <link rel="icon" href="../Assets/Imagenes/header/IconKickData.svg">
+    </head>
+    <body>
+        <header class="cabeza">
+            <a href="../index.html">	
+                <img src = "../Assets/Imagenes/header/LogoKickData.svg "Logo KickData" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="championsLeague.html" class="enlaces_CopaAmerica">Liga de Campeones</a></li>
+                    <li><a href="copaMundial.html" class="enlaces_CopaAmerica">Copa Mundial</a></li>
+                    <li><a href="copaAmérica.html" class="enlaces_CopaAmerica" id = "activo_america">Copa América</a></li>
+                    <li><a href="eurocopa.html" class="enlaces_CopaAmerica">Eurocopa</a></li>
+                    <li><a href=""><img src = "../Assets/Imagenes/header/btn_busqueda_copa_america.png" alt = "Buscar" id = "busqueda_america"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class = "principal_copa_america">
+            <video  src = "../Assets/Video/video_copa_america.mp4" type = "video/mp4" autoplay loop oncontextmenu="return false" class = "videos">
+                No se pudo cargar el video de la copa america
+            </video>
+
+            <audio autoplay>
+                <source src = "../Assets/music/audio_copa_america.mp3" type = "audio/mp3">
+            </audio>
+
+            <section class = "elementos_copa_america">
+                <div class = "cabeza_copa_america">
+                    <h2 class = "titulos_paginas_adi">COPA<br>AMÉRICA</h2>
+                    <img src = "../Assets/Imagenes/pag_copa_america/copa_america_logo.png" id = "logo_copa_america">
+                </div>
+                <div class = "botones_principales">
+                    <a href = "#(1916 - 1967)" class="enlaces_copa_america">
+                        <h3>Campeonato Sudamericano<br>(1916- 1967)</h3>
+                    </a>
+                    <a href = "#(1975 - 2024)" class="enlaces_copa_america">
+                        <h3>Copa América<br>(1975 - 2024)</h3>
+                    </a>
+                    <a href = "#max_goleadores_copa_america" class="enlaces_copa_america">
+                        <h3>Máximos<br>goleadores</h3>
+                    </a>
+                    <a href="#equipos_mas_ganadores" class = "enlaces_copa_america">
+                        <h3>Selecciones<br> más ganadores</h3>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <section id = "info_fondo_copa_america">
+            <img src = "../Assets/Imagenes/pag_copa_america/fondo_copa_america.png" alt="Fondo información de la Copa América" class = "info_back">
+            <article class = "informacion_torneo">
+                <p class = "descripciones_torneo" id = "descripcion_america">La Copa América, oficialmente conocido como Comebol Copa América, es el principal torneo internacional oficial de fútbol masculino en América del Sur. Inicialmente denominada Campeonato Sudamericano de Selecciones. Es organizada por la Confederación Sudamericana de Fútbol (Conmebol). El primer campeonato se realizo el 2 de Julio de 1916. Además de las 10 selecciones participantes suelen invitar 2 selecciones de la Concacaf, aunque han habido excepciones.</p>
+                <div id = "trofeos_balones">
+                    <div class = "titulo_imag">
+                        <h2><strong>Trofeo</strong></h2>
+                        <img src = "../Assets/Imagenes/pag_copa_america/trofeo_copa_america.png" alt = "Tofeo de la Copa América" id = "trofeo_copa_america">
+                    </div>
+                    <div class = "titulo_imag">
+                        <h2><strong>Diseño de balones</strong></h2>
+                        <img src="../Assets/Imagenes/pag_copa_america/balon_copa_america.png" alt="Balón de la Copa América" class = "balones">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <h2 class = "subtitulos">Registros historicos</h2>
+        <details open id = "(1916- 1967)">
+            <summary>
+                <h3 class = "subtitulos_copa_america">Campeonato Sudamericano (1916- 1967)</h3>
+                <img src = "../Assets/Imagenes/pag_copa_america/trofeo_copa_america.png" alt = "Trofeo copa de Campeonato Sudamericano (1916- 1967)" class = "imagen_subtitulos">
+            </summary>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Anfitrión</th>
+                    <th>Campeón</th>
+                    <th>Subcampeón</th>
+                    <th>Resultado</th>
+                    <th>Máximo goleador</th>
+                </tr>
+                <tr>
+                    <td>1916</td>
+                    <td>Argentina</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Isabelino Gradín<br>(3 goles)</td>
+                </tr>
+                <tr>
+                    <td>1917</td>
+                    <td>Uruguay</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Ángel Romano<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1919</td>
+                    <td>Brasil</td>
+                    <td>Brasil</td>
+                    <td>Uruguay</td>
+                    <td>1 - 0<br><small style = "font-size: 10px;">(Prórroga)</small></td>
+                    <td>Arthur Friendenreich y Neco<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1920</td>
+                    <td>Chile</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>José Pérez y Ángel Romano<br>(3 goles)</td>
+                </tr>
+                <tr>
+                    <td>1921</td>
+                    <td>Argentina</td>
+                    <td>Argentina</td>
+                    <td>Brasil</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px">(Por puntos)</small></td>
+                    <td>Julio Libonatti<br>(3 goles)</td>
+                </tr>
+                <tr>
+                    <td>1922</td>
+                    <td>Brasil</td>
+                    <td>Brasil</td>
+                    <td>Paraguay</td>
+                    <td>3 - 0</td>
+                    <td>Juan Francia<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1923</td>
+                    <td>Uruguay</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Pedro Petrone y Vicente Aguirre<br>(3 goles)</td>
+                </tr>
+                <tr>
+                    <td>1924</td>
+                    <td>Uruguay</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Pedro Petrone<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1925</td>
+                    <td>Argentina</td>
+                    <td>Argentina</td>
+                    <td>Brasil</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Manuel Seoane<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1926</td>
+                    <td>Chile</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>David Arellano<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1927</td>
+                    <td>Perú</td>
+                    <td>Argentina</td>
+                    <td>Uruguay</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Roberto Figueroa<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1929</td>
+                    <td>Argentina</td>
+                    <td>Argentina</td>
+                    <td>Paraguay</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Aurelio González<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>1935</td>
+                    <td>Perú</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Herminio Masantonio<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1937</td>
+                    <td>Argentina</td>
+                    <td>Argentina</td>
+                    <td>Brasil</td>
+                    <td>2 - 0<br><small style = "font-size: 10px;">(Prórroga)</small></td>
+                    <td>Raúl Toro<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1939</td>
+                    <td>Perú</td>
+                    <td>Perú</td>
+                    <td>Uruguay</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Lolo Fernánde<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1941</td>
+                    <td>Chile</td>
+                    <td>Argentina</td>
+                    <td>Uruguay</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Juan Andrés Marvezzi<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>1942</td>
+                    <td>Uruguay</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Herminio Masantonio y José Manuel Moreno<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1945</td>
+                    <td>Chile</td>
+                    <td>Argentina</td>
+                    <td>Brasil</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Norberto Méndez y Heleno (6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1946</td>
+                    <td>Argentina</td>
+                    <td>Argentina</td>
+                    <td>Brasil</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>José Maria Medina<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1947</td>
+                    <td>Ecuador</td>
+                    <td>Argentina</td>
+                    <td>Paraguay</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Nicolás Falero<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1949</td>
+                    <td>Brasil</td>
+                    <td>Brasil</td>
+                    <td>Paraguay</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Jair<br>(9 goles)</td>
+                </tr>
+                <tr>
+                    <td>1953</td>
+                    <td>Perú</td>
+                    <td>Paraguay</td>
+                    <td>Brasil</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Paco Molina<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>1955</td>
+                    <td>Chile</td>
+                    <td>Argentina</td>
+                    <td>Chile</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Rodolfo Micheli<br>(8 goles)</td>
+                </tr>
+                <tr>
+                    <td>1956</td>
+                    <td>Uruguay</td>
+                    <td>Uruguay</td>
+                    <td>Chile</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Enrique Hormazábal<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1957</td>
+                    <td>Perú</td>
+                    <td>Argentina</td>
+                    <td>Brasil</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Humberto Maschio y Havier Ambrois<br>(9 goles)</td>
+                </tr>
+                <tr>
+                    <td>1959 (I)</td>
+                    <td>Argentina</td>
+                    <td>Argentina</td>
+                    <td>Brasil</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Pelé<br>(8 goles)</td>
+                </tr>
+                <tr>
+                    <td>1959 (II)</td>
+                    <td>Ecuador</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>José Sanfilippo<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1963</td>
+                    <td>Bolivia</td>
+                    <td>Bolivia</td>
+                    <td>Paraguay</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Carlos Arlberto Raffo<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1967</td>
+                    <td>Uruguay</td>
+                    <td>Uruguay</td>
+                    <td>Argentina</td>
+                    <td>Grupo Final<br><small style = "font-size: 10px;">(Por puntos)</small></td>
+                    <td>Luis Artime<br>(5 goles)</td>
+                </tr>
+            </table>
+        </details>
+        <br>
+        <details open id = "(1975 - 2024)">
+            <summary>
+                <h3 class = "subtitulos_copa_america">Copa América (1975 - 2024)</h3>
+                <img src = "../Assets/Imagenes/pag_copa_america/trofeo_copa_america.png" alt = "Trofeo de la Copa América (1975 - 2024)" class = "imagen_subtitulos">
+            </summary>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Anfitrión</th>
+                    <th>Campeón</th>
+                    <th>Subcampeón</th>
+                    <th>Resultado</th>
+                    <th>Máximo goleador</th>
+                </tr>
+                <tr>
+                    <td>1975</td>
+                    <td>Sin sede fija</td>
+                    <td>Perú</td>
+                    <td>Colombia</td>
+                    <td>1 - 0</td>
+                    <td>José Ernesto Díaz y Leopoldo Luque<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1979</td>
+                    <td>Sin sede fija</td>
+                    <td>Paraguay</td>
+                    <td>Chile</td>
+                    <td>3 - 1</td>
+                    <td>Jorge Peredo y Eugenio Morel<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1983</td>
+                    <td>Sin sede fija</td>
+                    <td>Uruguay</td>
+                    <td>Brasil</td>
+                    <td>3 - 1</td>
+                    <td>Jorge Burruchaga, Roberto Dinamite y Carlos Aguilera<br>(3 goles)</td>
+                </tr>
+                <tr>
+                    <td>1991</td>
+                    <td>Chile</td>
+                    <td>Argentina</td>
+                    <td>Brasil</td>
+                    <td>3 - 2<br><small style = "font-size: 10px;">(grupo final)</small></td>
+                    <td>Gabriel Batistuta<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1993</td>
+                    <td>Ecuador</td>
+                    <td>Argentina</td>
+                    <td>México</td>
+                    <td>2 - 1</td>
+                    <td>José Luis Dolgetta<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1995</td>
+                    <td>Uruguay</td>
+                    <td>Uruguay</td>
+                    <td>Brasil</td>
+                    <td>1 - 1<br><small style = "font-size: 10px;">(5 - 3) P</small></td>
+                    <td>Gabriel Batistuta y Luis García<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>1997</td>
+                    <td>Bolivia</td>
+                    <td>Brasil</td>
+                    <td>Bolivia</td>
+                    <td>3 - 1</td>
+                    <td>Luis Hernández<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>1999</td>
+                    <td>Paraguay</td>
+                    <td>Brasil</td>
+                    <td>Uruguay</td>
+                    <td>3 - 0</td>
+                    <td>Ronaldo Nazario y Rivaldo<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>2001</td>
+                    <td>Colombia</td>
+                    <td>Colombia</td>
+                    <td>México</td>
+                    <td>1 - 0</td>
+                    <td>Victor Aristizábal<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>Perú</td>
+                    <td>Brasil</td>
+                    <td>Argentina</td>
+                    <td>2 - 2<br><small style = "font-size: 10px;">(4 - 2) P</small></td>
+                    <td>Adriano Leite Ribeiro<br>(7 goles)</td>
+                </tr>
+                <tr>
+                    <td>2007</td>
+                    <td>venezuela</td>
+                    <td>Brasil</td>
+                    <td>Argentina</td>
+                    <td>3 - 0</td>
+                    <td>Robinho<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>Argentina</td>
+                    <td>Uruguay</td>
+                    <td>Paraguay</td>
+                    <td>3 - 0</td>
+                    <td>Paolo Guerrero<br>(5 goles)</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>Chile</td>
+                    <td>Chile</td>
+                    <td>Argentina</td>
+                    <td>0 - 0<br><small style = "font-size: 10px;">(4 - 1) P</small></td>
+                    <td>Eduardo Vargas y Paolo Guerrero<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>"Centenario"<br>Estados Unidos</td>
+                    <td>Chile</td>
+                    <td>Argentina</td>
+                    <td>0 - 0<br><small style = "font-size: 10px;">(4 - 2) P</small></td>
+                    <td>Eduardo Vargas<br>(6 goles)</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Brasil</td>
+                    <td>Brasil</td>
+                    <td>Perú</td>
+                    <td>3 - 1</td>
+                    <td>Everton y Paolo Guerrero<br>(3 goles)</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Brasil</td>
+                    <td>Argentina</td>
+                    <td>Brasil</td>
+                    <td>1- 0</td>
+                    <td>Luis Díaz y Lionel Messi<br>(4 goles)</td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>Estados Unidos</td>
+                    <td>Argentina</td>
+                    <td>Colombia</td>
+                    <td>1 - 0</td>
+                    <td>Lautaro Martínez<br>(5 goles)</td>
+                </tr>
+            </table>
+        </details>
+        <br>
+        <section>
+            <h3 class = "subtitulos">Máximos goleadores de la<br>Copa América</h3>
+            <ul id = "max_goleadores">
+                <li class="listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>1.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/mendez_copa_america.jpg" alt="Norberto Méndez en la Copa América imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Norberto Méndez</strong></h5>
+                        <p class = "add_listas">17 goles</p>
+                    </article> 
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>2.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/zizinho_copa_america.png" alt="Zizinho en la Copa América imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Zizinho</strong></h5>
+                        <p class = "add_listas">17 goles</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>3.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/severino_copa_america.jpg" alt="Severino Varela en la Copa América imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Severino Varela</strong></h5>
+                        <p class = "add_listas">15 goles</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>4.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/teodoro_copa_america.jpg" alt="Teodoro Fernández en la Copa América imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Teodoro Fernández</strong></h5>
+                        <p class = "add_listas">15 goles</p>
+                    </article>
+                </li><br>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>5.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/messi_copa_america.jpeg" alt="Lionel Messi en la Copa_América imagen" class = "imagenes_listas_goleadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Lionel Messi</strong></h5>
+                        <p class = "add_listas">15 goles</p>
+                    </article>
+                </li><br>
+            </ul>
+        </section>
+        <br>
+        <section id = "equipos_mas_ganadores">
+            <h3 class = "subtitulos">Selecciones más ganadoras de<br>la Copa América</h3>
+            <ul id = "mas_ganadores">
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>1.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/argentina_copa_america.png" alt = "Croquis de Argentina con bandera Copa América" class = "img_listas_ganadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Argentina</strong></h5>
+                        <p class = "add_listas">16 Títulos</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>2.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/uruguay_copa_america.png" alt = "Croquis de Uruguay con bandera Copa América" class = "img_listas_ganadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Uruguay</strong></h5>
+                        <p class = "add_listas">15 Títulos</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>3.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/brasil_copa_america.png" alt = "Croquis de Brasil con bandera Copa América" class = "img_listas_ganadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Brasil</strong></h5>
+                        <p class = "add_listas">9 Títulos</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>4.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/paraguay_copa_america.png" alt = "Croquis de Paraguay con bandera Copa América" class = "img_listas_ganadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Paraguay</strong></h5>
+                        <p class = "add_listas">2 Títulos</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>5.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/chile_copa_america.png" alt = "Croquis de Chile con bandera Copa América" class = "img_listas_ganadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Chile</strong></h5>
+                        <p class = "add_listas">2 Títulos</p>
+                    </article>
+                </li>
+                <li class = "listas">
+                    <p class = "numeros_listas listas_copa_america"><strong>6.</strong></p>
+                    <img src = "../Assets/Imagenes/pag_copa_america/peru_copa_america.png" alt = "Croquis de Perú con bandera Copa América" class = "img_listas_ganadores">
+                    <article class = "info_listas">
+                        <h5 class = "nombre_listas"><strong>Perú</strong></h5>
+                        <p class = "add_listas">2 Títulos</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <hr id = "separador_america">
+		<footer>
+			<div id = "parte_izquierda">
+				<img src = "../Assets/Imagenes/footer/LogoKickData_Footer.svg" alt = "Logo de pie de pagina KickData" width = "256" height = "70">
+				<p>&copy 2026 KickData</p>
+				<p id = "informacion_proyecto">Proyecto académico - Ingeniería de Software</p>
+
+				<p>Desarrollador: Wilson David Monroy Ramirez</p>
+				<p>Fundación Universitaria compensar</p>
+			</div>
+			<div id = "parte_derecha">
+				<h4 id = "titulo_contacto_copa_america">Contacto</h4>
+				<div id = "contacto">
+					<div id = "contacto_izq">
+						<h5>Telefono:</h5>
+
+						<p>3024528951</p>
+						<p id = "telefono_fijo">(601)5611248</p>
+
+						<h5>Redes sociales:</h5>
+					</div>
+
+					<div id = "contacto_der">
+						<address>
+							<h5>Correo electronico:</h5>
+							<a  href = "mailto:KickData@gmail.com" id="info_gmail">KickData@gmail.com</a>
+						</address>
+						<a href = "https://www.facebook.com">
+							<img src = "../Assets/Imagenes/footer/facebook.png" alt = "Facebook" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.instagram.com">
+							<img src = "../Assets/Imagenes/footer/instagram.png" alt = "Instagram" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.whatsapp.com">
+							<img src = "../Assets/Imagenes/footer/whatsapp.png" alt = "WhatsApp" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.x.com">
+							<img src = "../Assets/Imagenes/footer/x.png" alt = "X" class = "redes_sociales_imagenes">
+						</a>
+						<a href = "https://www.youtube.com">
+							<img src = "../Assets/Imagenes/footer/youtube.png" alt = "YouTube" class = "redes_sociales_imagenes" id = "youtube_img">
+						</a>
+					</div>
+				</div>
+                <a href = "contacto.html" id = "btn_contacto_copa_america">Contáctate con nosotros</a>
+			</div>
+		</footer>
+    </body>
+</html>

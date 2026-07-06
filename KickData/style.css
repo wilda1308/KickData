@@ -1,0 +1,1613 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/*Todo el html, configuaración de todos los documentos*/
+html{
+    background-color: #0f172a;
+}
+
+/*Todos los headers de todas las páginas*/
+header{
+    color: #cbd5e1;
+}
+
+/*Navegación menú*/
+
+.cabeza{
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enlaces_principal, .enlaces_championsLeague, .enlaces_CopaMundial, .enlaces_CopaAmerica,.enlaces_euro, .enlaces_CopaMundial2026{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+#activo_champions{
+    font-weight: bold;
+    color: #2563eb;
+}
+
+#activo_mundial{
+    font-weight: bold;
+    color: #f59e0b;
+}
+
+#activo_america{
+    font-weight: bold;
+    color: #dc2626;
+}
+
+#activo_euro{
+    font-weight: bold;
+    color: #6366f1;
+}
+
+.enlaces_principal::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #06b6d4;
+    box-shadow: 0px 5px 10px 2px #06b6d4;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease-out;
+}
+
+.enlaces_championsLeague::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2563eb;
+    box-shadow: 0px 5px 10px 2px #2563eb;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease-out;
+}
+
+.enlaces_CopaMundial::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f59e0b;
+    box-shadow: 0px 5px 10px 2px #f59e0b;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease-out;
+}
+
+.enlaces_CopaMundial2026::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease-out;
+    animation: cambiarColorBtn 1s ease-in 0.2s infinite alternate, cambiarColorSombra 1s ease-in 0.2s infinite alternate;
+}
+
+
+.enlaces_CopaAmerica::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #dc2626;
+    box-shadow: 0px 5px 10px 2px #dc2626;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease-out;
+}
+
+.enlaces_euro::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6366f1;
+    box-shadow: 0px 5px 10px 2px #6366f1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease-out;
+}
+
+.enlaces_principal:hover::after{
+    transform: scaleX(1);
+}
+
+.enlaces_championsLeague:hover::after{
+    transform: scaleX(1);
+}
+
+.enlaces_CopaMundial:hover::after{
+    transform: scaleX(1);
+}
+
+.enlaces_CopaAmerica:hover::after{
+    transform: scaleX(1);
+}
+
+.enlaces_euro:hover::after{
+    transform: scaleX(1);
+}
+
+.enlaces_CopaMundial2026:hover::after{
+    transform: scaleX(1);
+}
+
+@keyframes cambiarColorSombra {
+    0%{
+        box-shadow: 0px 5px 10px 2px #2563eb;
+    }
+    50%{
+        box-shadow: 0px 5px 10px 2px #dc2626;
+    }
+    100%{
+        box-shadow: 0px 5px 10px 2px #22c55e;
+    }
+}
+
+/*Logo página web*/
+
+.logo{
+    width: 251px;
+    height: 72px;
+}
+
+#busqueda_index, #busqueda_champions, #busqueda_mundial, #busqueda_america, #busqueda_euro{
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    border-radius: 100%;
+    transition: 1s ease-out;
+}
+
+#busqueda_mundial2026{
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    border-radius: 100%;
+    background: #dc2626;
+    animation: cambiarColorBtn 1s ease-in 0.2s infinite alternate;
+}
+
+@keyframes cambiarColorBtn {
+    0%{
+        background-color: #2563eb;
+    }
+    50%{
+        background-color: #dc2626;
+    }
+    100%{
+        background-color: #22c55e;
+    }
+}
+
+#busqueda_mundial2026:hover{
+    animation: cambiarColorBtn 1s ease-in 0.2s infinite alternate, raton_encima_mundial2026 0.5s ease-in forwards;
+}
+
+#busqueda_index:hover{
+    animation: raton_encima 0.5s ease-in forwards;
+}
+
+#busqueda_champions:hover{
+    animation: raton_encima_champions 0.5s ease-in forwards;
+}
+
+#busqueda_mundial:hover{
+    animation: raton_encima_mundial 0.5s ease-in forwards;
+}
+
+#busqueda_america:hover{
+    animation: raton_encima_america 0.5s ease-in forwards;
+}
+
+#busqueda_euro:hover{
+    animation: raton_encima_euro 0.5s ease-in forwards;
+}
+
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+/*configuracion de todos los a (links)*/
+a{
+    text-decoration: none;
+    color:#cbd5e1;
+}
+
+/*Principal*/
+
+h1{
+    color:#f8fafc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    color:#f8fafc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#titulo_principal{
+    padding: 50px 0;
+    text-align: center;
+    font-size: 56px;
+    width: 60%;
+    margin: 10px auto 5px auto;
+}
+
+p{
+    color: #d8f9ff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#parrafo_principal{
+    text-align: center;
+    font-size: 24px;
+    padding: 45px;
+    background-color: #1e293b;
+    border-radius: 15px;
+    width: 800px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 20px #06b6d4;
+    animation: resaltarBorde 1s linear 0.2s infinite alternate;
+}
+
+@keyframes resaltarBorde {
+    0%{
+        border:solid 2px #ffffff;
+        box-shadow: 0px 0px 20px #ffffff;
+    }
+    100%{
+        border:solid 2px #06b6d4;
+        box-shadow: 0px 0px 40px #06b6d4;
+    }
+}
+
+#boton_explorar{
+    text-align: center;
+    color: #f8fafc;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px 10px;
+    background-color: #06b6d4;
+    border-radius: 100px;
+    width: 300px;
+    margin: 60px auto 0 auto;
+    display: block;
+}
+
+
+#boton_explorar:hover{ 
+    box-shadow: 0px 0px 50px #00d9ff;
+    animation: raton_encima 0.5s ease-in forwards;
+}
+
+@keyframes raton_encima {
+    to{
+        transform: scale(1.04);
+        box-shadow: 0px 0px 30px #06b6d4;
+    }
+}
+
+
+.parrafo_mensaje{
+    color:#06b6d4;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+#seleccion{
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Parte de formulario*/
+
+h3{
+    color:#f8fafc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#titulo_formulario{
+    color: #06b6d4;
+    font-size: 45px;
+    text-align: center;
+    margin: 100px auto 70px;
+}
+
+form{
+    margin-left: 250px;
+}
+
+form div{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 400px 1fr;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label, span{
+    color:#f8fafc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+
+
+.opciones{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+
+input{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 50px;
+    height: 58px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 410px;
+    background-color: #d8f9ff;
+}
+
+.bloque{
+    margin: 0;
+}
+
+form div div{
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0;
+}
+
+select{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 50px;
+    height: 58px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 200px;
+    background-color: #d8f9ff;
+}
+
+input#tel::-webkit-inner-spin-button, 
+input#tel::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    border: 0;
+}
+
+input[type = "radio"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #06b6d4;
+}
+
+
+textarea{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    background-color: #d8f9ff;
+}
+
+#tratamiento_datos{
+    width: 35px;
+    height: 35px;
+    background-color: #f8fafc;
+    accent-color: #06b6d4;
+}
+
+#lblInfo_politica{
+    font-size: 16px;
+}
+
+#lbl_politica{
+    margin-top: 100px;
+}
+
+#verificar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+input[type ="checkbox"]:hover, #lblInfo_politica:hover{
+    cursor: pointer;
+}
+
+#botones{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+button:hover{
+    cursor: pointer;
+    animation: raton_encima 0.5s ease-out forwards;
+}
+
+button{
+    border: none;
+    font-size: 22px;
+    padding: 20px 70px 20px 70px;
+    background-color: #06b6d4;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 100px;
+    color: #f8fafc;
+}
+
+/*Torneos más importantes del fútbol*/
+
+#titulo_torneos{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.enlaces h5{
+    transition: color 1s ease-out;
+}
+
+.enlaces:hover h5{
+    color: #06b6d4;
+}
+
+.fila1{
+    display: flex;
+    gap: 48px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.cartas{
+    background-color: #1e293b;
+    padding-left: 26px;
+    padding-bottom: 17px;
+    padding-right: 26px;
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border-radius: 10px
+}
+
+.cartas:hover{
+    animation: raton_encima 1s ease forwards;
+}
+
+#cartas_torneos{
+    padding-bottom: 64px;
+}
+
+#separador_index{
+    margin-bottom: 40px;
+    animation: resaltarBorde 1s ease-out 0.2s infinite alternate;
+}
+
+#separador_champions{
+    margin-bottom: 40px;
+    animation: resaltarBorde_champions 1s ease-out 0.2s infinite alternate;
+}
+
+#separador_mundial{
+    margin-bottom: 40px;
+    animation: resaltarBorde_mundial 1s ease-out 0.2s infinite alternate;
+}
+
+#separador_mundial2026{
+    margin-bottom: 40px;
+    animation: resaltarBorde_mundial2026 1s ease-out 0.2s infinite alternate;
+}
+
+#separador_america{
+    margin-bottom: 40px;
+    animation: resaltarBorde_america 1s ease-out 0.2s infinite alternate;
+}
+
+#separador_euro{
+    margin-bottom: 40px;
+    animation: resaltarBorde_euro 1s linear 0.2s infinite alternate;
+}
+
+footer{
+    background-color: #0f172a;
+    padding-left: 33px;
+    padding-bottom: 37px;
+    padding-top: 10px;
+    padding-right: 40px;
+    display: flex;
+    color: #cbd5e1;
+    justify-content: space-between;
+}
+.redes_sociales_imagenes{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 18px;
+    margin-top: 30px;
+    
+}
+
+#youtube_img{
+    width: 58px;
+}
+
+
+#parte_izquierda, #parte_derecha{
+    flex : 1;
+}
+
+
+#parte_derecha h4{
+    align-items: center;
+}
+
+div#contacto{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+h4{
+    color:#f8fafc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5{
+    color:#f8fafc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#titulo_contacto_principal{
+    color:#06b6d4;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#titulo_contacto_champions{
+    color:#2563eb;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#titulo_contacto_mundial{
+    color: #f59e0b;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#titulo_contacto_mundial2026{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    animation: cambiarColor 1s ease-in 0.2s infinite alternate;
+}
+
+@keyframes cambiarColor {
+    0%{
+        color: #2563eb
+    }
+    50%{
+        color: #dc2626;
+    }
+    100%{
+        color: #22c55e;
+    }
+}
+
+#titulo_contacto_eurocopa{
+    color: #6366f1;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#titulo_contacto_copa_america{
+    color: #dc2626;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#contacto_der{
+    text-align: right;
+}
+
+address{
+    font-style: normal;
+}
+
+address h5{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#contacto_izq h5{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+#contacto_izq p, #parte_izquierda p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#parte_izquierda #informacion_proyecto, #contacto_izq #telefono_fijo{
+    margin-bottom: 25px;
+}
+
+#btn_contacto_principal{
+    display: flex;
+    width: 28%;
+    justify-content: center;
+    padding: 10px 5px;
+    margin: 20px auto 10px;
+    background-color: #06b6d4;
+    font-size: 15px;
+    color: #0f172a;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+#btn_contacto_principal:hover{
+    animation: raton_encima 0.4s ease-in forwards;
+}
+
+#btn_contacto_champions{
+    display: flex;
+    width: 28%;
+    justify-content: center;
+    padding: 10px 5px;
+    margin: 20px auto 10px;
+    background-color: #2563eb;
+    font-size: 15px;
+    color: #0f172a;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+#btn_contacto_champions:hover{
+    animation: raton_encima_champions 0.4s ease-in forwards;
+}
+
+#btn_contacto_mundial{
+    display: flex;
+    width: 28%;
+    justify-content: center;
+    padding: 10px 5px;
+    margin: 20px auto 10px;
+    background-color: #f59e0b;
+    font-size: 15px;
+    color: #0f172a;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+#btn_contacto_mundial2026{
+    display: flex;
+    width: 28%;
+    justify-content: center;
+    padding: 10px 5px;
+    margin: 20px auto 10px;
+    animation: cambiarColorBtn 1s ease-in 0.2s infinite alternate;
+    font-size: 15px;
+    color: #0f172a;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+#btn_contacto_mundial:hover{
+    animation: raton_encima_mundial 0.4s ease-in forwards;
+}
+
+#btn_contacto_mundial2026:hover{
+    animation: cambiarColorBtn 1s ease-in 0.2s infinite alternate, raton_encima_mundial2026 0.4s ease-in forwards;
+}
+
+#btn_contacto_eurocopa{
+    display: flex;
+    width: 28%;
+    justify-content: center;
+    padding: 10px 5px;
+    margin: 20px auto 10px;
+    background-color: #6366f1;
+    font-size: 15px;
+    color: #0f172a;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+#btn_contacto_eurocopa:hover{
+    animation: raton_encima_euro 0.4s ease-in forwards;
+}
+
+#btn_contacto_copa_america{
+    display: flex;
+    width: 28%;
+    justify-content: center;
+    padding: 10px 5px;
+    margin: 20px auto 10px;
+    background-color: #dc2626;
+    font-size: 15px;
+    color: #0f172a;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+#btn_contacto_copa_america:hover{
+    animation: raton_encima_america 0.4s ease-in forwards;
+}
+
+.principal_champions, .principal_copa_mundial, .principal_eurocopa, .principal_copa_america{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+#logo_champions{
+    width: 358px;
+    height: 358px;
+    border-radius: 100px;
+    animation: resaltarBorde_champions 1s linear 0.2s infinite alternate;
+}
+
+#logo_copa_mundial{
+    width: 222px;
+    height: 333px;
+    padding: 30px;
+    background-color: #000000;
+    border-radius: 100px;
+    animation: resaltarBorde_mundial 1s linear 0.2s infinite alternate;
+}
+
+#logo_copa_mundial2026{
+    width: 222px;
+    height: 333px;
+    padding: 30px;
+    background-color: #000000;
+    border-radius: 100px;
+    animation: resaltarBorde_mundial2026 1s linear 0.2s infinite alternate;
+}
+
+#logo_eurocopa{
+    width: 297px;
+    height: 475px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    animation: resaltarBorde_euro 1s linear 0.2s infinite alternate;
+}
+
+#logo_copa_america{
+    width: 353px;
+    height: 382px;
+    border-radius: 100px;
+    animation: resaltarBorde_america 1s linear 0.2s infinite alternate;
+}
+
+.videos{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 25%;
+    pointer-events: none;
+}
+
+.elementos_champions, .elementos_copa_mundial, .elementos_eurocopa, .elementos_copa_america{
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.cabeza_champions, .cabeza_copa_mundial, .cabeza_eurocopa, .cabeza_copa_america{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.titulos_paginas_adi{
+    font-size: 53px;
+}
+
+.botones_principales{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.subtitulos_champions{
+    text-shadow: 2px 0px 0px #2563eb, 0px 2px 0px #2563eb, -2px 0px 0px #2563eb, 0px -2px 0px #2563eb;
+    color: #f8fafc;
+}
+
+.subtitulos_mundial{
+    text-shadow: 2px 0px 0px #f59e0b, 0px 2px 0px #f59e0b, -2px 0px 0px #f59e0b, 0px -2px 0px #f59e0b;
+    color: #f8fafc;
+}
+
+.subtitulos_eurocopa{
+    text-shadow: 2px 0px 0px #6366f1, 0px 2px 0px #6366f1, -2px 0px 0px #6366f1, 0px -2px 0px #6366f1;
+    color: #f8fafc;
+}
+
+.subtitulos_copa_america{
+    text-shadow: 2px 0px 0px #dc2626, 0px 2px 0px #dc2626, -2px 0px 0px #dc2626, 0px -2px 0px #dc2626;
+    color: #f8fafc;
+}
+
+.listas_champions{
+    background-color: #2563eb;
+    animation: resaltarBorde_champions 1s linear 0.2s infinite alternate;
+}
+
+.listas_mundial{
+    background-color: #f59e0b;
+    animation: resaltarBorde_mundial 1s linear 0.2s infinite alternate;
+}
+
+.listas_eurocopa{
+    background-color: #6366f1;
+    animation: resaltarBorde_euro 1s linear 0.2s infinite alternate;
+}
+
+.listas_copa_america{
+    background-color: #dc2626;
+    animation: resaltarBorde_america 1s linear 0.2s infinite alternate;
+}
+
+div a.enlaces_champions h3{
+    background-color: #2563eb;
+    padding: 20px 30px;
+    border-radius: 100px;
+    color: #f8fafc;
+    font-size: 25px;
+    font-family: 'Montserrat';
+}
+
+.enlaces_champions h3:hover{
+    box-shadow: 0px 0px 50px #2563eb;
+    animation: raton_encima_champions 0.5s ease-in forwards;
+}
+
+@keyframes raton_encima_champions {
+    to{
+        transform: scale(1.04);
+        box-shadow: 0px 0px 30px #2563eb;
+    }
+}
+
+
+div a.enlaces_eurocopa h3{
+    background-color: #6366f1;
+    padding: 20px 30px;
+    border-radius: 100px;
+    color: #f8fafc;
+    font-size: 25px;
+}
+
+.enlaces_eurocopa h3:hover{
+    box-shadow: 0px 0px 50px #6366f1;
+    animation: raton_encima_euro 0.5s ease-in forwards;
+}
+
+@keyframes raton_encima_euro {
+    to{
+        transform: scale(1.04);
+        box-shadow: 0px 0px 30px #6366f1;
+    }
+}
+
+div a.enlaces_mundial h3{
+    background-color: #f59e0b;
+    padding: 20px 30px;
+    border-radius: 100px;
+    color: #f8fafc;
+    font-size: 25px;
+}
+
+.enlaces_mundial h3:hover{
+    box-shadow: 0px 0px 50px #f59e0b;
+    animation: raton_encima_mundial 0.5s ease-in forwards;
+}
+
+@keyframes raton_encima_mundial {
+    to{
+        transform: scale(1.04);
+        box-shadow: 0px 0px 30px #f59e0b;
+    }
+}
+
+@keyframes raton_encima_mundial2026 {
+    to{
+        transform: scale(1.04);
+        box-shadow: 0px 0px 30px #ffffff;
+    }
+}
+
+div a.enlaces_copa_america h3{
+    background-color: #dc2626;
+    padding: 20px 30px;
+    border-radius: 100px;
+    color: #f8fafc;
+    font-size: 25px;
+}
+
+.enlaces_copa_america h3:hover{
+    box-shadow: 0px 0px 50px #dc2626;
+    animation: raton_encima_america 0.5s ease-in forwards;
+}
+
+@keyframes raton_encima_america {
+    to{
+        transform: scale(1.04);
+        box-shadow: 0px 0px 30px #dc2626;
+    }
+}
+
+#info_fondo_champions, #info_fondo_copa_mundial, #info_fondo_eurocopa, #info_fondo_copa_america{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.info_back{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 25%;
+}
+
+.informacion_torneo{
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 140px 60px;
+    gap: 40px;
+    align-items: center;
+}
+
+.balones{
+    width: 188px;
+}
+
+#trofeos_balones{
+    display: flex;
+    gap: 80px;
+    margin-left: 90px;
+    text-align: center;
+    align-items: center;
+}
+
+#trofeo_copa_america{
+    width: 137px;
+    height: 351px;
+}
+
+.descripciones_torneo{
+    font-size: 19px;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(203, 213, 225, 0.23);
+    border-radius: 13px;
+}
+
+#descripcion_champions{
+    animation: resaltarBorde_champions 1s linear 0.2s infinite alternate;
+}
+
+#descripcion_mundial{
+    animation: resaltarBorde_mundial 1s linear 0.2s infinite alternate;
+}
+
+#descripcion_mundial2026{
+    animation: resaltarBorde_mundial2026 1s linear 0.2s infinite alternate;
+}
+
+#descripcion_america{
+    animation: resaltarBorde_america 1s linear 0.2s infinite alternate;
+}
+
+#descripcion_euro{
+    animation: resaltarBorde_euro 1s linear 0.2s infinite alternate;
+}
+
+@keyframes resaltarBorde_champions {
+    0%{
+        border:solid 2px #ffffff;
+        box-shadow: 0px 0px 20px #ffffff;
+    }
+    100%{
+        border:solid 2px #2563eb;
+        box-shadow: 0px 0px 40px #2563eb;
+    }
+}
+
+@keyframes resaltarBorde_mundial {
+    0%{
+        border:solid 2px #ffffff;
+        box-shadow: 0px 0px 20px #ffffff;
+    }
+    100%{
+        border:solid 2px #f59e0b;
+        box-shadow: 0px 0px 40px #f59e0b;
+    }
+}
+
+@keyframes resaltarBorde_mundial2026 {
+    0%{
+        border:solid 2px #2563eb;
+        box-shadow: 0px 0px 40px #2563eb;
+    }
+    50%{
+        border:solid 2px #dc2626;
+        box-shadow: 0px 0px 20px #dc2626;
+    }
+    100%{
+        border:solid 2px #22c55e;
+        box-shadow: 0px 0px 40px #22c55e;
+    }
+}
+
+@keyframes resaltarBorde_america {
+    0%{
+        border:solid 2px #ffffff;
+        box-shadow: 0px 0px 20px #ffffff;
+    }
+    100%{
+        border:solid 2px #dc2626;
+        box-shadow: 0px 0px 40px #dc2626;
+    }
+}
+
+@keyframes resaltarBorde_euro {
+    0%{
+        border:solid 2px #ffffff;
+        box-shadow: 0px 0px 20px #ffffff;
+    }
+    100%{
+        border:solid 2px #6366f1;
+        box-shadow: 0px 0px 40px #6366f1;
+    }
+}
+
+summary{
+    color:#f8fafc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+
+details{
+    margin-left: 100px;
+}
+
+
+th{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+td{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+td > a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:#f8fafc;
+}
+
+table{
+    display: flexbox;
+    margin-right: auto;
+    width: 90%;
+}
+
+table, th, tr, td{
+    color:#f8fafc;
+    border: 3px solid #ffffff;
+    border-collapse: collapse;
+    padding: 5px auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.imagen_subtitulos{
+    width: auto;
+    height: 45px;
+    margin-left: 10px;
+}
+
+
+.subtitulos{
+    margin-left: 60px;
+    font-size: 64px;
+    margin-bottom: 100px;
+}
+
+ul#max_goleadores, ul#mas_ganadores{
+    display: flex;
+    flex-direction: column;
+}
+
+li.listas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 120px;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.imagenes_listas_goleadores{
+    width: 323px;
+    height: 239px;
+    border-radius: 67px;
+    margin-left: 180px;
+}
+
+
+.numeros_listas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 102px;
+    font-size: 64px;
+    border-radius: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info_listas{
+    margin: auto;
+    padding: auto;
+}
+
+.nombre_listas{
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.add_listas{
+    font-size: 30px;
+    color: #f8fafc;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.img_listas_ganadores{
+    height: 185px;
+    margin: auto;
+}
+
+.cantidad_trofeos{
+    display: flex;
+    height: 185px;
+    gap: 15px;
+    margin: auto auto auto 0;
+}
+
+.imagenes_cant_trofeos{
+    height: 184px;
+    width: auto;
+    margin: auto 5px;
+}
+
+div#datos-container{
+    margin: 70px;
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: resaltarBorde 1s linear 0.2s infinite alternate;
+    border-radius: 100px 20px;
+}
+
+h6#titulo-datos{
+    font-family: 'Montserrat', sans-serif;
+    color: #06b6d4;
+    font-size: 45px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+div#datos-container p, div.datos-box p{
+    color:#f8fafc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+
+div#datos-box{
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+span.datos{
+    margin: 5px auto;
+    text-align: center;
+    animation: resaltarTexto 1.5s ease-in-out 0.2s infinite alternate;
+    color: #00d9ff;
+}
+
+
+@keyframes resaltarTexto {
+    0%{
+        text-shadow: 0px 0px 20px #006ba4;
+    }
+    100%{
+        text-shadow: 0px 0px 40px #06b6d4;
+    }
+}
+
+p#texto-motivo{
+    margin-left: 50px;
+}
+
+
+#estado-api {
+    text-align: center;
+    padding: 60px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #94a3b8;
+}
+
+.spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #334155;
+    border-radius: 50%;
+    animation: cambiarColorCarga 1s ease-in 0.2s infinite alternate, girar 0.8s linear infinite;
+    margin-bottom: 16px;
+}
+
+@keyframes cambiarColorCarga {
+    0%{
+        border-top-color: #2563eb;
+    }
+    50%{
+        border-top-color: #dc2626;
+    }
+    100%{
+        border-top-color: #22c55e;
+    }
+}
+
+@keyframes girar {
+    to { transform: rotate(360deg); }
+}
+
+.error-api{
+    color: #f87171;
+}
+
+button#btn-descubrir{
+    display: block;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    animation: cambiarColorBtn 1s ease-in 0.2s infinite alternate;
+    font-size: 20px;
+    color: #0f172a;
+    font-weight: bold;
+    border-radius: 100px;
+}
+
+p#cant-equipos{
+    text-align: center;
+    color: #ffffff;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 40px;
+}
+
+div#contenedor-grupos{
+    margin: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.grupo-block{
+    border-radius: 20px;
+    padding: 8px 40px 30px;
+}
+
+
+h3.titulo-grupo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff;
+}
+
+div.grilla-equipos{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+    align-self: center;
+    justify-self: center;
+    margin-left: 20px;
+}
+
+div.tarjeta-header{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+div.tarjeta-info{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.badge{
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    color: #000000;
+}
+
+.codigo{
+    border: none;   
+}
+
+.bandera{
+    font-size: 35px;
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+.grupo-block#A{
+    background-color: #22c55eda;
+}
+
+.grupo-block#A span.badge{
+    background-color: #94ffbbda;
+}
+
+.grupo-block#A span.codigo{
+    background-color: #00752bda;
+    color: #ffffff;
+}
+
+.grupo-block#B{
+    background-color: #ff0000da;
+}
+
+.grupo-block#B span.badge{
+    background-color: #ff9595da;
+}
+
+.grupo-block#B span.codigo{
+    background-color: #770101da;
+    color: #ffffff;
+}
+
+.grupo-block#C{
+    background-color: #fff200c5;
+}
+
+.grupo-block#C span.badge{
+    background-color: #fffa98c5;
+}
+
+.grupo-block#C span.codigo{
+    background-color: #827b00c4;
+    color: #ffffff;
+}
+
+.grupo-block#D{
+    background-color: #001b54da;
+}
+
+.grupo-block#D span.badge{
+    background-color: #3e578eda;
+}
+
+.grupo-block#D span.codigo{
+    background-color: #0036aada;
+    color: #ffffff;
+}
+
+.grupo-block#E{
+    background-color: #ff6200da;
+}
+
+.grupo-block#E span.badge{
+    background-color: #ffc099da;
+}
+
+.grupo-block#E span.codigo{
+    background-color: #7c3000da;
+    color: #ffffff;
+}
+
+.grupo-block#F{
+    background-color: #004e41da;
+}
+
+.grupo-block#F span.badge{
+    background-color: #3d9486da;
+}
+
+.grupo-block#F span.codigo{
+    background-color: #00b092da;
+    color: #ffffff;
+}
+
+.grupo-block#G{
+    background-color: #5a80ffaf;
+}
+
+.grupo-block#G span.badge{
+    background-color: #b1c3ffaf;
+}
+
+.grupo-block#G span.codigo{
+    background-color: #1336aaaf;
+    color: #ffffff;
+}
+
+.grupo-block#H{
+    background-color: #00b692da;
+}
+
+.grupo-block#H span.badge{
+    background-color: #62d8c1da;
+}
+
+.grupo-block#H span.codigo{
+    background-color: #005f4cda;
+    color: #ffffff;
+}
+
+.grupo-block#I{
+    background-color: #200071da;
+}
+
+.grupo-block#I span.badge{
+    background-color: #553c93da;
+}
+
+.grupo-block#I span.codigo{
+    background-color: #0e0032da;
+    color: #ffffff;
+}
+
+.grupo-block#J{
+    background-color: #ff9878da;
+}
+
+.grupo-block#J span.badge{
+    background-color: #ffd2c5da;
+}
+
+.grupo-block#J span.codigo{
+    background-color: #9f5944da;
+    color: #ffffff;
+}
+
+.grupo-block#K{
+    background-color: #ff0090da;
+}
+
+.grupo-block#K span.badge{
+    background-color: #ff98d2da;
+}
+
+.grupo-block#K span.codigo{
+    background-color: #7a0045da;
+    color: #ffffff;
+}
+
+.grupo-block#L{
+    background-color: #540000da;
+}
+
+.grupo-block#L span.badge{
+    background-color: #aa4f4fda;
+}
+
+.grupo-block#L span.codigo{
+    background-color: rgb(48, 0, 0);
+    color: #ffffff;
+}

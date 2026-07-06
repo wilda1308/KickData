@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+		<link href ="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<link href = "../style.css" rel = "stylesheet">
+        <title>KickData</title>
+        <link rel="icon" href="../Assets/Imagenes/header/IconKickData.svg">
+    </head>
+    <body>
+		<header class="cabeza">
+			<a href="../index.html">	
+				<img src = "../Assets/Imagenes/header/LogoKickData.svg" alt = "Logo KickData" class="logo">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="../html/championsLeague.html" class="enlaces_principal">Liga de Campeones</a></li>
+					<li><a href="../html/copaMundial.html" class="enlaces_principal">Copa Mundial</a></li>
+					<li><a href="../html/copaAmérica.html" class="enlaces_principal">Copa América</a></li>
+					<li><a href="../html/eurocopa.html" class="enlaces_principal">Eurocopa</a></li>
+					<li><a href=""><img src = "../Assets/Imagenes/header/btn_busqueda_principal.png" alt = "Buscar" id = "busqueda_index"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+            <section>
+                <h2 id = "titulo_formulario">Contáctate con nosotros</h2>
+                <form action = "" method="POST" id = "formulario-contactar">
+                    <div>
+                        <label for = "nombres"><strong>Nombres:</strong></label>
+                        <input type = "text" id = "nombres" name = "usuario_nombres" placeholder = "Escribe tu nombre/s" required class = "entradas">
+                    </div>
+                    <div>
+                        <label for = "apellidos"><strong>Apellidos:</strong></label>
+                        <input type = "text" id = "apellidos" name = "usuario_apellidos" placeholder = "Escribe tu apellido/s" required class = "entradas">
+                    </div>
+                    <div>
+                        <label for = "fecha"><strong>Fecha de nacimiento:</strong></label>
+                        <input type = "date" id = "fecha" name = "usuario_nacimiento" required>
+                    </div>
+                    <div>
+                        <label for="pais"><strong>País:</strong></label>
+                        <select id = "pais" name = "usuario_pais">
+                            <option value = "COL">Colombia</option>
+                            <option value = "ARG">Argentina</option>
+                            <option value = "BRA">Brasil</option>
+                            <option value = "ESP">España</option>
+                            <option value = "URU">Uruguay</option>
+                            <option value = "MEX">México</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for = "tel"><strong>Teléfono móvil:</strong></label>
+                        <input type = "number" id = "tel" name = "tel" placeholder="3028459090" max= "999999999999999" >
+                    </div>
+
+                    <div>
+                        <label for = "mail"><strong>Correo electrónico:</strong></label>
+                        <input type = "email" id = "mail" name = "usuario_mail" placeholder="Ingresa tu correo (ejemplo@gmail.com)" required class = "entradas">
+                    </div>
+                    <div>
+                        <label for = "direccion"><strong>Dirección:</strong></label>
+                        <input type = "text" id = "direccion" name = "usuario_direccion" placeholder="Dirección de residencia(CLL 76 # 10-50)" required class = "entradas" autocomplete="address-level1">
+                    </div>
+                    <div class="genero">
+                        <span><strong>Genero:</strong></span>
+                        <div id = "respuestas">
+                            <div class = "bloque">
+                                <input type = "radio" id = "masculino" name = "usuario_genero" value = "M" class = "radios">
+                                <label for = "masculino" class = "opciones">Masculino</label>
+                            </div>
+                            <div class = "bloque">
+                                <input type = "radio" id = "Femenino" name = "usuario_genero" value = "F" class = "radios">
+                                <label for = "Femenino" class = "opciones">Femenino</label>
+                            </div>
+                        </div>		
+                    </div>
+                    <div>
+                        <label for = "motivo"><strong>Motivo de contacto:</strong></label>
+                        <textarea id = "motivo" name = "motivo" rows = "6" cols = "50" placeholder = "Escriba el porque de su contacto (máximo 350 caracteres)" maxlength = "350"></textarea>
+                    </div>
+                    <br>
+                    <label id = "lbl_politica"><strong>Política de tratamiento de datos personales:</strong></label><br>
+                    <div id="verificar">
+                        <input type="checkbox" id = "tratamiento_datos" value = "si" required>
+                        <label for = "tratamiento_datos" id = "lblInfo_politica"> De acuerdo con la ley 1581 de 2012 de protección de datos personales, he leído, entendido y acepto, los terminos descritos en la política de tratamiento de datos personales.</label>
+                    </div>
+                    
+                    <div id = "botones">
+                        <button type="submit"><strong>Enviar</strong></button>
+                        <button type="reset"><strong>Borrar</strong></button>
+                    </div>
+                </form>
+                <div id = "datos-container" style = "display: none;"></div>
+            </section>
+        </main>
+		
+		<hr>
+		<footer>
+			<div id = "parte_izquierda">
+				<img src = "../Assets/Imagenes/footer/LogoKickData_Footer.svg" alt = "Logo de pie de pagina KickData" width = "256" height = "70">
+				<p>&copy 2026 KickData</p>
+				<p id = "informacion_proyecto">Proyecto académico - Ingeniería de Software</p>
+
+				<p>Desarrollador: Wilson David Monroy Ramirez</p>
+				<p>Fundación Universitaria compensar</p>
+			</div>
+			<div id = "parte_derecha">
+				<h4 id = "titulo_contacto_principal">Contacto</h4>
+				<div id = "contacto">
+					<div id = "contacto_izq">
+						<h5>Telefono:</h5>
+
+						<p>3024528951</p>
+						<p id = "telefono_fijo">(601)5611248</p>
+
+						<h5>Redes sociales:</h5>
+					</div>
+
+					<div id = "contacto_der">
+						<address>
+							<h5>Correo electronico:</h5>
+							<a  href = "mailto:KickData@gmail.com" id="info_gmail">KickData@gmail.com</a>
+						</address>
+						<a>
+							<img src = "../Assets/Imagenes/footer/facebook.png" alt = "Facebook" class = "redes_sociales_imagenes">
+						</a>
+						<a href="">
+							<img src = "../Assets/Imagenes/footer/instagram.png" alt = "Instagram" class = "redes_sociales_imagenes">
+						</a>
+						<a href="">
+							<img src = "../Assets/Imagenes/footer/whatsapp.png" alt = "WhatsApp" class = "redes_sociales_imagenes">
+						</a>
+						<a href="">
+							<img src = "../Assets/Imagenes/footer/x.png" alt = "X" class = "redes_sociales_imagenes">
+						</a>
+						<a href="">
+							<img src = "../Assets/Imagenes/footer/youtube.png" alt = "YouTube" class = "redes_sociales_imagenes" id = "youtube_img">
+						</a>
+					</div>
+				</div>
+                <a href = "contacto.html" id = "btn_contacto_principal">Contáctate con nosotros</a>
+			</div>
+		</footer>
+    </body>
+    <script src = "../app.js"></script>
+</html>
